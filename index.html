@@ -1,0 +1,33 @@
+    <body>
+      <h1 id="title">Work with Evil Corporation</h1>
+      <p id="description">Hello fellow villain, please tell us about you!</p>
+      <form id="survey-form">
+        <fieldset>
+      <label for="name" id="name-label">what is your name?
+        <input id="name" type="text" required placeholder="your name goes here"></input></label>
+        <label for="email" id="email-label">what is your email?
+        <input id="email" type="email" required placeholder="your@emailhere.com"></input></label>
+        <label for="number" id="number-label">How old are you?
+        <input id="number" type="number" min="18" max="55" placeholder="your age"></input></label>
+        <label for="dropdown">With what gender do you identify with?
+        <select id="dropdown">
+          <option value="">Select one</option>
+          <option value="1">Man</option>
+          <option value="2">Woman</option>
+          <option value='3'>Prefer not to say</option>
+        </select></label>
+        </fieldset>
+        <fieldset>
+          <legend>Which type of work do you want?</legend>
+          <label for="full-time"><input id="full-time" type="radio" name="work-type" class="inline" checked value="1">Full-time</input></label>
+          <label for="part-time"><input id="part-time" type="radio" name="work-type" class="inline" value="2">Part-time</input></label>
+          </fieldset>
+          <fieldset>
+            <label for="cv">Please input your CV here:<input id="cv" type="file" name="cv" required></input></label>
+            <label for="bio">Tell us about your work experience:<textarea id="bio" name="bio" placeholder="i robbed the louvre museum, i like cats, etc." rows="3" cols="40"></textarea></label>
+          </fieldset>
+            <label for="terms"><input type="checkbox" value="1" id="terms" required class="inline">By clicking this you accept our <a href="https://www.evilcorp.com/terms-and-conditions/" class="terms">terms and conditions</a></input></label>
+            <label for="news"><input type="checkbox" value="2" class="inline">Do you want to receive news and updates from us?</input id="news"></label>
+            <input type="submit" id="submit" value="Submit"></input>
+      </form>
+    </body>
